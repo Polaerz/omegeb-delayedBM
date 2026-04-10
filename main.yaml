@@ -915,6 +915,16 @@
       coord: [-2924.12, 153.42, 2329.39]
 
   - .dir(.E)
+  - _Korok::W19:
+      comment: On ledge
+
+  - _Shrine::KayNoh:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=5207))
+
+  - Short .dir(N)
+  - _Korok::W15
+
+  - Drop down
   - _Npc<Sesami>:
       coord: [-2797.53, 135.05, 2240.97]
 
@@ -3299,16 +3309,7 @@
   - .dir(N>) + midair
   - _Korok::W30
 
-  - .dir(NW)
-  - _Korok::W19:
-      comment: On ledge
-
-  - _Shrine::KayNoh:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=5207))
-
-  - Run .dir(N)
-  - _Korok::W15
-
+  - .dir(<<N)
   - _Npc<Sesami>:
       coord: [-2797.53, 135.05, 2240.97]
       comment: Missing in Action
@@ -5259,6 +5260,10 @@
   - _Korok::R56
 
   - .dir(<W)
+  - _Material<Armoranth>:
+      coord: [-1955.80, 311.51, 400.80]
+      comment: Little sister's Big Request
+
   - _Korok::R55:
       comment: In tree stump
       notes: If the Lord of the Mountain is awake, reload the autosave from this korok or the stalnox won't wake up. Also make night if you need to.
