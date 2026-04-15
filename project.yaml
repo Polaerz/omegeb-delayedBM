@@ -1,6 +1,6 @@
 title: 100% Route using Great Eagle Bow with WMC
 
-version: 1.0
+version: 1.0.1
 
 route:
   use: ./main.yaml

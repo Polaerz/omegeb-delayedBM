@@ -4353,7 +4353,37 @@
   - _Korok::F20:
       comment: " "
 
-  - .dir(<E)
+  - .!!(Unequip) metal:
+      icon: shield
+      hide-icon-on-map: true
+
+  - .dir(<W)
+  - _Korok::F29:
+      comment: Block in lake
+
+  - .dir(S>) short
+  - .!!(Re-equip) metal:
+      icon: shield
+      hide-icon-on-map: true
+
+  - .dir(S)
+  - Reveal shrine:
+      icon: tots
+      hide-icon-on-map: true
+      notes: Get hit by lightning
+  - _Shrine::QukahNata:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=13053))
+
+  - Run .dir(N>>)
+  - _Npc::Rito<Kass>:
+      coord: [2081.89, 287.42, 3226.31]
+      comment: Song of Storms
+
+  - .dir(NE)
+  - _Korok::F21:
+      comment: " "
+
+  - .dir(N>)
   - _Boss::Hinox::Black:
       coord: [2420.75, 327.47, 2782.60]
 
@@ -4390,33 +4420,6 @@
 
   - _Shrine::TawaJinn:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=12879))
-
-  - .dir(<W)
-  - _Korok::F21
-
-  - .!!(Unequip) metal:
-      icon: shield
-      hide-icon-on-map: true
-
-  - .dir(<W)
-  - _Korok::F29:
-      comment: Block in lake
-
-  - .dir(SE) run
-  - .!!(Re-equip) metal:
-      icon: shield
-      hide-icon-on-map: true
-  - _Npc::Rito<Kass>:
-      coord: [2081.89, 287.42, 3226.31]
-      comment: Song of Storms
-
-  - .dir(<<W)
-  - Reveal shrine:
-      icon: tots
-      hide-icon-on-map: true
-      notes: Get hit by lightning
-  - _Shrine::QukahNata:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=13053))
 
   - .dir(E>) super
 
