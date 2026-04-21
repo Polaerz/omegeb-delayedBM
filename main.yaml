@@ -5166,11 +5166,7 @@
       notes: Equip ancient axe + wooden shield to avoid lightning
       comment: 35.73%
 
-  - .dir(W)
-  - _Korok::R15:
-      comment: " "
-
-  - .dir(<N)
+  - .dir(W>>)
   - Launch red orb:
       icon: tots
       coord: [-2135.60, 219.98, -909.20]
@@ -5201,7 +5197,11 @@
   - .dir(S) short
   - _Korok::R14
 
-  - .dir(<<S) super
+  - .dir(E)
+  - _Korok::R15:
+      comment: " "
+
+  - .dir(S) super
   - _Korok::R23:
       notes: Complete R24 before the last flower of R23
   - _Korok::R24:
@@ -5909,10 +5909,6 @@
   - .dir(NE)
   - _Korok::A34:
       comment: " "
-
-  - .dir(S)
-  - _Korok::A38:
-      comment: On bridge
 
   - _Warp::Shrine::NeezYohma:
       color: lime
@@ -6901,7 +6897,11 @@
       hide-icon-on-map: true
       notes: "7 full upgrades: Set of the Wild, Zora Set, Champion's Tunic"
 
-  - .dir(N.)
+  - .dir(N)
+  - _Korok::A38:
+      comment: On bridge
+
+  - glide down/right
   - _Npc<Kilton>:
       coord: [4152.87, 194.63, -1597.24]
   - Sell Lizalfos Tails for .!!(mon):
