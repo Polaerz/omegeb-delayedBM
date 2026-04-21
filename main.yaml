@@ -642,11 +642,13 @@
       icon: cook
       hide-icon-on-map: true
 
-  - .dir(W.)
-  - _Korok::T10
+  - .dir(W)
+  - _Korok::T17:
+      comment: On island pillar
 
-  - .dir(.W)
-  - _Korok::T13
+  - .dir(S>)
+  - _Boss::Hinox::Black:
+      coord: [-3793.68, 246.02, -1557.10]
 
   - _Npc::Rito<Kheel>:
       coord: [-3979.33, 271.21, -1751.18]
@@ -5498,33 +5500,7 @@
       comment: Bedoli
       notes: Ancient Rito Song
 
-  - Run up
-  - _Npc::SheikaFemale<Baked Apple lady>:
-      coord: [-3611.76, 289.03, -1849.23]
-      comment: Juney
-
-  - Drop left
-  - _Npc::Rito<Pink girl>:
-      coord: [-3618.43, 320.15, -1797.41]
-      comment: Molli
-
-  - .gale(GALE 1) from stairs
-  - _Npc::Rito<Pink singing girl>:
-      coord: [-3596.62, 317.93, -1794.98]
-      comment: Notts
-
-  - Down
-  - _Npc::Rito<Rito Mom>:
-      coord: [-3668.51, 321.49, -1769.96]
-      comment: Amali
-
-  - _Shrine::AkhVaquot:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=19172))
-
-  - _Korok::T14:
-      comment: Step back, aim all the way up
-
-  - Glide down to cookpot
+  - Glide down/left to cookpot
   - _Cook<Cook Salmon Meuniere>:
       comment: Wheat, butter, salmon
 
@@ -5548,15 +5524,39 @@
       coord: [-3606.34, 296.75, -1799.16]
       comment: Cree
 
-  - .dir(W)
-  - _Korok::T17:
-      comment: On island pillar
+  - .gale(GALE 1) in front of inn
+  - _Npc::SheikaFemale<Baked Apple lady>:
+      coord: [-3611.76, 289.03, -1849.23]
+      comment: Juney
 
-  - .dir(S>)
-  - _Boss::Hinox::Black:
-      coord: [-3793.68, 246.02, -1557.10]
+  - Drop left
+  - _Npc::Rito<Pink girl>:
+      coord: [-3618.43, 320.15, -1797.41]
+      comment: Molli
 
-  - .dir(W>>)
+  - .dir(W.)
+  - _Korok::T10
+
+  - .dir(E.) from stairs
+  - _Korok::T14
+  
+  - Down
+  - _Npc::Rito<Pink singing girl>:
+      coord: [-3596.62, 317.93, -1794.98]
+      comment: Notts
+
+  - Down
+  - _Shrine::AkhVaquot:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=19172))
+
+  - _Npc::Rito<Rito Mom>:
+      coord: [-3668.51, 321.49, -1769.96]
+      comment: Amali
+
+  - .dir(.W)
+  - _Korok::T13
+
+  - Run
   - Activate .!!(Pedestal):
       icon: tots
       hide-icon-on-map: true
