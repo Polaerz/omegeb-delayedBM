@@ -1,5 +1,5 @@
 # omegeb-DelayedBM
 
-Route that I use with Hebra South and Ridgeland delayed for Blood Moon cycle
+Route that I use with Ridgeland delayed for Blood Moon cycle
 
-Base route : https://celer.pistonite.org/view/minghaob/omegeb:v1_new_celer
+WR route : https://celer.pistonite.org/view/sobolews/omegeb:v1_new_celer

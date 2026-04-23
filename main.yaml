@@ -2,7 +2,7 @@
 - Resources >> .link([Object Map]https://objmap.zeldamods.org/#/map/z5,0,0), .link([Master Guide]https://docs.google.com/spreadsheets/d/1qLOC3ajm6a-vrXvlwAecbhW88iT8vtv9iSvP0jUcwzY/edit?usp=sharing), .link([Drop Table Calculator]https://restite.org/drops/), .link([Material Usage Spreadsheet]https://docs.google.com/spreadsheets/d/1SMovk9HxD9_wqcsnHYNq8xmsclU6olqzI3pqu3QZ4Ro/edit#gid=722444247), .link([Database of Shrine Strats]https://restite.org/as/)
 - Questions or Corrections? Join the .link([BOTW Speedrunning discord]https://discord.gg/94YzaMFZxC) and ask in the 100% channel!
 - .link([Commentated walkthrough of the early parts of the route]https://youtu.be/0YZkmVyhfy4) // .link([Reference run of the whole route]https://youtu.be/Aw14LJhXV-8?list=PLxRHLKOlaIbj6REgghSRSqMeAPxUX33ax)
-- This route delay Hebra South and Ridgeland for Blood Moon cycle. .link([Original route]https://celer.pistonite.org/view/sobolews/omegeb:v1_new_celer)
+- This route delay Ridgeland for Blood Moon cycle. .link([Original route]https://celer.pistonite.org/view/sobolews/omegeb:v1_new_celer)
 
 - Before Starting:
   - Set system clock:
@@ -694,16 +694,121 @@
   - .dir(<E) + midair
   - _Shrine::ShadaNaw:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=7534))
+      
+  - .dir(S.) down under ice shelf
+  - _Boss::Talus::Frost:
+      coord: [-3073.50, 478.42, -2918.50]
 
-  - .dir(<S)
-  - _Korok::H20:
-      comment: Chimney of hut
+  - .dir(S>)
+  - _Korok::H33
 
-  - .dir(<E)
-  - _Korok::H21
+  - .gale(GALE 1) + run .dir(E)
+  - _Korok::H34
 
-  - .dir(NW)
-  - _Korok::H12
+  - .gale(GALE 2) + .dir(S) down
+  - _Korok::H46
+
+  - .dir(SE)
+  - _Korok::H48
+
+  - .dir(N)
+  - _Korok::H49
+
+  - .dir(N) run
+  - _Korok::H50:
+      comment: Look .dir(E) over river
+      movements:
+          - push
+          - to: [-2836.29, 501.88, -2423.84]
+            icon: korok-balloon
+            color: white
+          - pop
+      icon-map: null
+
+  - _Korok::H47:
+      comment: Look .dir(NW) at river head
+      movements:
+          - push
+          - to: [-2900.08, 498.65, -2508.79]
+            icon: korok-balloon
+            color: white
+          - pop
+      icon-map: null
+
+  - .dir(N)
+  - _Korok::H44:
+      comment: Look NW, balloon under ledge
+
+  - .dir(E) midair
+  - _Korok::H45
+
+  - .dir(S)
+  - _Korok::H56:
+      comment: Along bridge
+
+  - .dir(NE)
+  - _Korok::H51:
+      comment: In cliff corner
+
+  - .dir(E>)
+  - Open cave door:
+      notes: .link([Snowball strat]https://www.youtube.com/watch?v=cbn3TgjVdDk&t=10)
+  - _Shrine::GeeHarah:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=7903))
+
+  - .gale(GALE 3) + .dir(N) + .dir(E>) midair:
+      movements:
+          - to: [-2389,-2355]
+
+  - _Korok::H57
+
+  - .dir(<W)
+  - _Shrine::LannoKooh:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=8018))
+
+  - _Korok::H64
+
+  - Swim out to cryo + <E
+  - _Korok::H61:
+      comment: On peak
+
+  - .dir(E>)
+  - _Tower::Hebra
+
+  - .dir(<E) down
+  - _Discover<Pondo's Lodge>:
+      coord: [-2076.70, 389.70, -2080.90]
+
+  - .dir(<<W)
+  - _Korok::H67
+
+  - .dir(S) surf
+  - _Korok::H70
+
+  - .dir(W)
+  - _Korok::H69:
+      comment: " "
+
+  - midair .dir(<W)
+  - _Korok::H72
+
+  - .dir(W>)
+  - _Korok::T18
+
+  - .dir(N)
+  - _Boss::Talus::Rare:
+      coord: [-2864.50, 408.98, -1825.91]
+
+  - .dir(NE)
+  - _Korok::H65:
+      comment: Top of tree in island
+
+  - .dir(<W)
+  - _Korok::H66:
+      comment: " "
+
+  - .dir(S>>)
+  - _Korok::T19
 
 
 - Vah Naboris:
@@ -5709,124 +5814,6 @@
   - .dir(E>>) down
   - _Korok::R04
 
-- Hebra South:
-  - _Warp::Shrine::ShadaNaw:
-      color: "#b54dff"
-      comment: WARP
-  - .dir(S.) down under ice shelf
-  - _Boss::Talus::Frost:
-      coord: [-3073.50, 478.42, -2918.50]
-
-  - .dir(S>)
-  - _Korok::H33
-
-  - .gale(GALE 1) + run .dir(E)
-  - _Korok::H34
-
-  - .gale(GALE 2) + .dir(S) down
-  - _Korok::H46
-
-  - .dir(SE)
-  - _Korok::H48
-
-  - .dir(N)
-  - _Korok::H49
-
-  - .dir(N) run
-  - _Korok::H50:
-      comment: Look .dir(E) over river
-      movements:
-          - push
-          - to: [-2836.29, 501.88, -2423.84]
-            icon: korok-balloon
-            color: white
-          - pop
-      icon-map: null
-
-  - _Korok::H47:
-      comment: Look .dir(NW) at river head
-      movements:
-          - push
-          - to: [-2900.08, 498.65, -2508.79]
-            icon: korok-balloon
-            color: white
-          - pop
-      icon-map: null
-
-  - .dir(N)
-  - _Korok::H44:
-      comment: Look NW, balloon under ledge
-
-  - .dir(E) midair
-  - _Korok::H45
-
-  - .dir(S)
-  - _Korok::H56:
-      comment: Along bridge
-
-  - .dir(NE)
-  - _Korok::H51:
-      comment: In cliff corner
-
-  - .dir(E>)
-  - Open cave door:
-      notes: .link([Snowball strat]https://www.youtube.com/watch?v=cbn3TgjVdDk&t=10)
-  - _Shrine::GeeHarah:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=7903))
-
-  - .gale(GALE 3) + .dir(N) + .dir(E>) midair:
-      movements:
-          - to: [-2389,-2355]
-
-  - _Korok::H57
-
-  - .dir(<W)
-  - _Shrine::LannoKooh:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=8018))
-
-  - _Korok::H64
-
-  - Swim out to cryo + <E
-  - _Korok::H61:
-      comment: On peak
-
-  - .dir(E>)
-  - _Tower::Hebra
-
-  - .dir(<E) down
-  - _Discover<Pondo's Lodge>:
-      coord: [-2076.70, 389.70, -2080.90]
-
-  - .dir(<<W)
-  - _Korok::H67
-
-  - .dir(S) surf
-  - _Korok::H70
-
-  - .dir(W)
-  - _Korok::H69:
-      comment: " "
-
-  - midair .dir(<W)
-  - _Korok::H72
-
-  - .dir(W>)
-  - _Korok::T18
-
-  - .dir(N)
-  - _Boss::Talus::Rare:
-      coord: [-2864.50, 408.98, -1825.91]
-
-  - .dir(NE)
-  - _Korok::H65:
-      comment: Top of tree in island
-
-  - .dir(<W)
-  - _Korok::H66:
-      comment: " "
-
-  - .dir(S>>)
-  - _Korok::T19
 
 - Hebra North:
   - _Warp::Shrine::ShadaNaw:
@@ -5897,6 +5884,20 @@
   - _Snap::Quest<Hebra Great Skeleton>:
       hide-icon-on-map: true
       comment: SNAP for quest
+  
+  - _Warp::Shrine::ShadaNaw:
+      comment: WARP
+      color: "#b54dff"
+  
+  - .dir(<S)
+  - _Korok::H20:
+      comment: Chimney of hut
+
+  - .dir(<E)
+  - _Korok::H21
+
+  - .dir(NW)
+  - _Korok::H12
 
 - Eldin / Akkala Cleanup:
 
